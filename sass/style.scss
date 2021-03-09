@@ -1,0 +1,184 @@
+$color-primary: #1f8dc0;
+$font-family: 'Roboto', sans-serif;
+
+
+$font-stack-secondary: 'Raleway', sans-serif;
+ * {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+ }
+ body, html {
+   height: 100%;
+ }
+// BASE -------------------------------------->
+#logo {
+  margin: -10px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+ul {
+  display: flex;
+  padding-top: 40px;
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 40px;
+  color: black;
+  font-size: 25px;
+  font-family: $font-family;
+
+}
+.link_color {
+  color: $color-primary;
+}
+.link_color:hover {
+  color: black;
+}
+.GH_hover:hover {
+  color: $color-primary;
+}
+// first section ----//
+.first_section {
+  background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
+  background-repeat: no-repeat;
+  font-family: $font-family;
+  font-size: 3em;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  line-height: 120%;
+}
+
+.main_section_layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 150px;
+  margin-top: 20px;
+}
+.my_pic {
+  border-radius: 30%;
+}
+.profession {
+  color: $color-primary;
+}
+
+.CV_button {
+  background-color: $color-primary;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.about_me_introduction {
+  font-size: 2em;
+  font-family: $font-family;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.bottom_line {
+  height: 3px;
+  width: 4rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+  background: $color-primary;
+}
+.about_me_section {
+  column-count: 2;
+  column-gap: 100px;
+  padding: 20px;
+}
+
+.third_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.process {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr);
+  grid-gap: 3rem;
+  text-align: center;
+}
+.skill-container {
+  width:100%;
+  background-color:rgb(221, 243, 252) ;
+}
+.skills {
+  text-align: right;
+  padding: 10px 10px 10px 0;
+  color: black;
+  font-size: 20px;
+}
+.html{width:100%; background-color:$color-primary}
+.css{width:90%; background-color:$color-primary}
+.rwd{width:100%; background-color:$color-primary}
+.js{width:80%; background-color:$color-primary}
+.sass{width:80%; background-color:$color-primary}
+.react{width:80%; background-color:$color-primary}
+.ts{width:50%; background-color:$color-primary}
+
+.sixth_section {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.motivational_letter {
+  font-family: $font-family;
+  text-align: center;
+  padding-left: 20px;
+}
+p {
+  font-size: 20px;
+  font-family: $font-family;
+}
+.mentor_words {
+  padding: 20px;
+  margin: 20px;
+}
+
+#main-footer{
+  background-color: rgb(221, 243, 252);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+}
+footer {
+  display: block;
+}
+.footer-content {
+display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; 
+}
+a {
+  text-decoration: none;
+ color: black;
+ font-size: 30px;
+ padding: 14px 20px;
+}

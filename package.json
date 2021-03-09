@@ -1,0 +1,22 @@
+{
+  "name": "jolanta27.github.io",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jolanta27/Jolanta27.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jolanta27/Jolanta27.github.io/issues"
+  },
+  "homepage": "https://github.com/Jolanta27/Jolanta27.github.io#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
