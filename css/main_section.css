@@ -1,80 +1,62 @@
-@import 'variables';
-
 section:nth-of-type(1) {
-  margin-top: 100px;
-}
+  margin-top: 100px; }
 
 .first_section {
   font-size: 2em;
   letter-spacing: 0.02em;
   line-height: 100%;
   margin: 10px;
-  text-align: center;
-}
+  text-align: center; }
 
 .CV_button {
   font-size: 15px;
   width: 100%;
-  background-color: $color-primary;
+  background-color: #1f8dc0;
   color: white;
   text-transform: uppercase;
   border-radius: 8px;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 .my_pic {
   border-radius: 30%;
-  width: 35%;
-}
+  width: 35%; }
 
 .my_pic:hover, .CV_button:hover, .little_pic:hover {
   -ms-transform: scale(1.05) translateZ(0);
-  transform: scale(1.05) translateZ(0);
-}
+  transform: scale(1.05) translateZ(0); }
 
 .profession {
-  color: $color-primary;
-}
+  color: #1f8dc0; }
 
-@media only screen and (min-width: $small) and (max-width: $medium) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .my_pic {
-    width: 50%;
-   
-  }
- 
-}
-@media only screen and (min-width: $medium) {
+    width: 50%; } }
+
+@media only screen and (min-width: 600px) {
   section:nth-of-type(1) {
     margin-top: 220px;
-    height: 80vh;
-  }
-
+    height: 80vh; }
   .first_section {
     background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
     background-repeat: no-repeat;
-    font-family: $font-family;
+    font-family: "Roboto", sans-serif;
     font-size: 3em;
     letter-spacing: 0.03em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 120%;
-  }
+    line-height: 120%; }
   .main_section_layout {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     padding: 20px 150px;
-    margin-top: 20px;
-  }
-
-.CV_button {
-
-  margin: 10px;
-  padding: 6px;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-}
+    margin-top: 20px; }
+  .CV_button {
+    margin: 10px;
+    padding: 6px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    width: 50%; } }

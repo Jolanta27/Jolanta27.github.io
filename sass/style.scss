@@ -1,5 +1,5 @@
-$color-primary: #1f8dc0;
-$font-family: 'Roboto', sans-serif;
+@import 'variables';
+
  @import 'header';
  @import 'main_section';
  @import 'main';
@@ -9,6 +9,9 @@ $font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+ }
+ body {
+   font-size: 100%;
  }
 section {
   display: block;

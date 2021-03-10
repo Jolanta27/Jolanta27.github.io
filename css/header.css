@@ -1,42 +1,36 @@
-@import 'variables';
-
 #logo {
   margin-left: 5px;
   height: 84px;
-  transition: height 0.4s;
-}
+  transition: height 0.4s; }
+
 .main-header {
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0;
-  background: #eee;
-}
+  background: #eee; }
+
 ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
-  padding-top: 22px;
-}
+  padding-top: 22px; }
 
 ul li a {
   text-decoration: none;
   padding: 40px;
   color: black;
   font-size: 25px;
-  font-family: $font-family;
-  transition: color 0.4s;
-}
+  font-family: "Roboto", sans-serif;
+  transition: color 0.4s; }
+
 .link_color {
-  color: $color-primary;
-}
+  color: #1f8dc0; }
+
 .link_color:hover {
-  color: black;
-}
+  color: black; }
+
 .GH_hover:hover {
-  color: $color-primary;
-}
-  @media only screen and (min-width: $small) and (max-width: $medium) {}
-  @media only screen and (min-width: $medium) {}
+  color: #1f8dc0; }

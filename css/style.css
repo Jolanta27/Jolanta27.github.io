@@ -36,28 +36,27 @@ ul li a {
   color: #1f8dc0; }
 
 section:nth-of-type(1) {
-  margin-top: 220px;
-  height: 80vh; }
+  margin-top: 100px; }
 
 .first_section {
-  background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
-  background-repeat: no-repeat;
-  font-family: "Roboto", sans-serif;
-  font-size: 3em;
-  letter-spacing: 0.03em;
-  display: flex;
-  flex-direction: column;
-  line-height: 120%; }
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  line-height: 100%;
+  margin: 10px;
+  text-align: center; }
 
-.main_section_layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 150px;
-  margin-top: 20px; }
+.CV_button {
+  font-size: 15px;
+  width: 100%;
+  background-color: #1f8dc0;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none; }
 
 .my_pic {
-  border-radius: 30%; }
+  border-radius: 30%;
+  width: 35%; }
 
 .my_pic:hover, .CV_button:hover, .little_pic:hover {
   -ms-transform: scale(1.05) translateZ(0);
@@ -66,28 +65,48 @@ section:nth-of-type(1) {
 .profession {
   color: #1f8dc0; }
 
-.CV_button {
-  background-color: #1f8dc0;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 10px;
-  padding: 6px;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  width: 50%; }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .my_pic {
+    width: 50%; } }
+
+@media only screen and (min-width: 600px) {
+  section:nth-of-type(1) {
+    margin-top: 220px;
+    height: 80vh; }
+  .first_section {
+    background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 120%; }
+  .main_section_layout {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 20px 150px;
+    margin-top: 20px; }
+  .CV_button {
+    margin: 10px;
+    padding: 6px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    width: 50%; } }
 
 section:nth-of-type(2) {
   height: 100vh; }
 
-.about_me_introduction {
-  font-size: 2em;
+h2 {
+  font-size: 3em;
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding: 20px 0;
-  margin-top: 120px; }
+  margin-top: 40px; }
 
 .bottom_line {
   height: 3px;
@@ -97,20 +116,15 @@ section:nth-of-type(2) {
   background: #1f8dc0; }
 
 .about_me_section {
-  column-count: 2;
-  column-gap: 100px;
-  padding: 20px; }
+  text-align: center;
+  padding: 5px 10px; }
 
-.small_pictures {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0; }
+p {
+  padding-bottom: 5px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif; }
 
 .process {
-  display: grid;
-  grid-template-columns: repeat(2, 1.5fr);
-  grid-gap: 3rem;
   text-align: center; }
 
 .skill-container {
@@ -151,23 +165,57 @@ section:nth-of-type(2) {
   width: 50%;
   background-color: #1f8dc0; }
 
-.sixth_section {
-  display: flex;
-  align-items: center;
-  align-content: space-between; }
-
 .motivational_letter {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding-left: 20px; }
+  padding: 25px 20px 0 20px; }
 
-p {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif; }
+.mentor_pic {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
-.mentor_words {
-  padding: 20px;
-  margin: 20px; }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  h2 {
+    font-size: 2em; }
+  .little_pic {
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .little_pic_1 {
+    display: none; } }
+
+@media only screen and (min-width: 600px) {
+  .about_me_section {
+    column-count: 2;
+    column-gap: 100px;
+    padding: 20px; }
+  p {
+    font-size: 20px; }
+  .fa-file-alt, .fa-thumbs-up, .fa-desktop, .fa-users {
+    font-size: 50px;
+    padding-bottom: 15px; }
+  h3 {
+    font-size: 24px;
+    padding-bottom: 10px; }
+  .small_pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0; }
+  .process {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-gap: 3rem; }
+  .sixth_section {
+    display: flex;
+    align-items: center;
+    align-content: space-between; }
+  .mentor_pic {
+    padding: 20px;
+    margin: 20px; } }
 
 #main-footer {
   background-color: #ddf3fc;
@@ -175,9 +223,6 @@ p {
   margin: 0;
   padding: 0;
   height: 5rem; }
-
-footer {
-  display: block; }
 
 .footer-content {
   display: flex;
@@ -194,13 +239,26 @@ footer {
 a {
   text-decoration: none;
   color: black;
-  font-size: 30px;
+  font-size: 3vh;
   padding: 14px 20px; }
+
+.copyright {
+  font-family: "Roboto", sans-serif; }
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .social {
+    display: none; }
+  .copyright {
+    font-size: 2vh;
+    text-align: center; } }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+body {
+  font-size: 100%; }
 
 section {
   display: block; }
