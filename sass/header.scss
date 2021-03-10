@@ -1,0 +1,43 @@
+#logo {
+    margin-left: 5px;
+    height: 84px;
+    transition: height 0.4s;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #eee;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 22px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    padding: 40px;
+    color: black;
+    font-size: 25px;
+    font-family: $font-family;
+    transition: color 0.4s;
+  }
+  .link_color {
+    color: $color-primary;
+  }
+  .link_color:hover {
+    color: black;
+  }
+  .GH_hover:hover {
+    color: $color-primary;
+  }
+
+  section:nth-of-type(1) {
+    margin-top: 220px;
+    height: 80vh;
+  }
