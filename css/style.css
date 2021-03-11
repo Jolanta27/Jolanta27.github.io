@@ -176,8 +176,15 @@ p {
 .process {
   text-align: center; }
 
+#myProgress {
+  width: 100%; }
+
+#myProgress p {
+  margin-left: 20px; }
+
 .skill-container {
-  width: 100%;
+  width: 98%;
+  margin: auto;
   background-color: #ddf3fc; }
 
 .skills {

@@ -29,9 +29,16 @@ h2 {
   .process {
     text-align: center;
   }
-  
+  #myProgress {
+    width: 100%;
+  }
+   #myProgress p {
+    margin-left: 20px;
+    
+  }
   .skill-container {
-    width:100%;
+    width:98%;
+    margin: auto;
     background-color:rgb(221, 243, 252) ;
   }
   .skills {
@@ -40,7 +47,7 @@ h2 {
     color: black;
     font-size: 20px;
   }
-  .html{width:100%; background-color:$color-primary}
+  .html{width:100%; background-color:$color-primary;}   
   .css{width:90%; background-color:$color-primary}
   .rwd{width:100%; background-color:$color-primary}
   .js{width:80%; background-color:$color-primary}

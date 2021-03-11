@@ -42,9 +42,6 @@ ul li a {
 .GH_hover:hover {
   color: $color-primary;
 }
-  @media only screen and (min-width: $small) and(max-width: $medium) {
-   
-  }
   @media only screen and (min-width: $medium) {
     #logo {
       height: 100%;
