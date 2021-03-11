@@ -1,5 +1,9 @@
 @import 'variables';
 // Mobile first
+@mixin flexy {
+  display: flex;
+  justify-content: space-between;
+}
 header {
   width: 100%;
   top: 0;
@@ -47,8 +51,7 @@ header {
 
   @media only screen and (min-width: $medium) {
     header {
-      display: flex;
-      justify-content: space-between;
+      @include flexy;
       position: fixed;
       span {
         display: none;
@@ -60,8 +63,7 @@ header {
       }
       nav {
         ul {
-          display: flex;
-          justify-content: space-between;
+         @include flexy;
           align-items: center;
           list-style-type: none;
           padding-top: 15px;

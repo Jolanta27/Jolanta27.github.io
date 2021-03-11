@@ -1,8 +1,13 @@
 @import 'variables';
-
-section:nth-of-type(1) {
-  margin-top: 60px;
+@mixin animation {
+  -ms-transform: scale(1.05) translateZ(0);
+  transform: scale(1.05) translateZ(0);
 }
+section:nth-of-type(1) {
+  margin-top: 120px;
+  height: 100vh;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -17,86 +22,87 @@ section:nth-of-type(1) {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
-}
-#myBtn:hover {
-background-color:#83d8ff;
-}
-
-
-.first_section {
-  font-family: $font-family;
-  font-size: 2em;
-  letter-spacing: 0.02em;
-  line-height: 100%;
-  margin: 10px;
-  text-align: center;
-}
-.span_me {
-  display: block;
+  &:hover {
+    background-color:#83d8ff;
+  }
 }
 
-.CV_button {
-  font-size: 10px;
-  width: 30%;
-  margin: 10px auto;
-  background-color: $color-primary;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 8px;
-  text-decoration: none;
-  display: block;
-}
-.my_pic {
-  border-radius: 30%;
-  width: 35%;
-  margin: 70px auto;
-  display: block;
-}
+section {
+      h1 {
+      font: {
+        family: $font-family;
+        size: 2em;
+      }
+      letter-spacing: 0.02em;
+      line-height: 100%;
+      margin: 10px;
+      text-align: center;
+      span {
+        display: block;
+      }
+      .my_button{
+        font-size: 10px;
+        width: 30%;
+        margin: 10px auto;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 8px;
+        text: {
+          transform: uppercase;
+          decoration: none;
+        }
+        display: block;
+        &:hover {
+          @include animation;
+        }
+      }
+      .profession {
+        color: $color-primary;
+      }
+  } .my_pic {
+    border-radius: 30%;
+    width: 35%;
+    margin: 70px auto;
+    display: block;
+    &:hover {
+    @include animation;
+    }
+  }
+}  
 
-.my_pic:hover, .CV_button:hover, .little_pic:hover {
-  -ms-transform: scale(1.05) translateZ(0);
-  transform: scale(1.05) translateZ(0);
-}
-
-.profession {
-  color: $color-primary;
-}
-
-@media only screen and (min-width: $small) and (max-width: $medium) {}
 @media only screen and (min-width: $medium) {
   section:nth-of-type(1) {
     margin-top: 220px;
     height: 80vh;
   }
-
-  .first_section {
-    background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
-    background-repeat: no-repeat;
-    font-size: 3em;
-    letter-spacing: 0.03em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 120%;
+    section {
+      div {
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          padding: 10px 150px;
+          h1 {
+          background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
+          background-repeat: no-repeat;
+          font-size: 3em;
+          letter-spacing: 0.03em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          line-height: 120%;
+          a {
+            margin: 10px;
+            padding: 6px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+          }    
+      } 
+    }.my_pic {
+      width: 35%;
+      margin: auto 10px;
+    }
   }
-  .main_section_layout {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 10px 150px;
-  }
-
-.CV_button {
-  margin: 10px;
-  padding: 6px;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-.my_pic {
-  width: 35%;
-  margin: auto 10px;
-}
 }

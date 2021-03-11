@@ -60,7 +60,8 @@ header {
           color: black; } }
 
 section:nth-of-type(1) {
-  margin-top: 60px; }
+  margin-top: 120px;
+  height: 100vh; }
 
 #myBtn {
   display: none;
@@ -76,72 +77,70 @@ section:nth-of-type(1) {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px; }
+  #myBtn:hover {
+    background-color: #83d8ff; }
 
-#myBtn:hover {
-  background-color: #83d8ff; }
-
-.first_section {
+section h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2em;
   letter-spacing: 0.02em;
   line-height: 100%;
   margin: 10px;
   text-align: center; }
+  section h1 span {
+    display: block; }
+  section h1 .my_button {
+    font-size: 10px;
+    width: 30%;
+    margin: 10px auto;
+    background-color: #1f8dc0;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block; }
+    section h1 .my_button:hover {
+      -ms-transform: scale(1.05) translateZ(0);
+      transform: scale(1.05) translateZ(0); }
+  section h1 .profession {
+    color: #1f8dc0; }
 
-.span_me {
-  display: block; }
-
-.CV_button {
-  font-size: 10px;
-  width: 30%;
-  margin: 10px auto;
-  background-color: #1f8dc0;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 8px;
-  text-decoration: none;
-  display: block; }
-
-.my_pic {
+section .my_pic {
   border-radius: 30%;
   width: 35%;
   margin: 70px auto;
   display: block; }
-
-.my_pic:hover, .CV_button:hover, .little_pic:hover {
-  -ms-transform: scale(1.05) translateZ(0);
-  transform: scale(1.05) translateZ(0); }
-
-.profession {
-  color: #1f8dc0; }
+  section .my_pic:hover {
+    -ms-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0); }
 
 @media only screen and (min-width: 600px) {
   section:nth-of-type(1) {
     margin-top: 220px;
     height: 80vh; }
-  .first_section {
-    background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
-    background-repeat: no-repeat;
-    font-size: 3em;
-    letter-spacing: 0.03em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 120%; }
-  .main_section_layout {
+  section div {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     padding: 10px 150px; }
-  .CV_button {
-    margin: 10px;
-    padding: 6px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    width: 50%; }
-  .my_pic {
+    section div h1 {
+      background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
+      background-repeat: no-repeat;
+      font-size: 3em;
+      letter-spacing: 0.03em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 120%; }
+      section div h1 a {
+        margin: 10px;
+        padding: 6px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        width: 50%; }
+  section .my_pic {
     width: 35%;
     margin: auto 10px; } }
 
