@@ -1,34 +1,38 @@
 @import 'variables';
 
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer; 
+  color: black;
+  font-size: 24px;
+}
+
 #logo {
+  margin-top: 10px;
   margin-left: 5px;
-  height: 84px;
-  transition: height 0.4s;
+}
+ul {
+  list-style-type: none;
+  display: none;
+}
+ nav li {
+  text-align: center;
+  margin: 15px auto;
 }
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
   width: 100%;
   top: 0;
   background: #eee;
 }
-ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  padding-top: 22px;
+ul li a {
+  font-family: $font-family;
+}
+.active {
+  display: block;
 }
 
-ul li a {
-  text-decoration: none;
-  padding: 40px;
-  color: black;
-  font-size: 25px;
-  font-family: $font-family;
-  transition: color 0.4s;
-}
 .link_color {
   color: $color-primary;
 }
@@ -38,5 +42,36 @@ ul li a {
 .GH_hover:hover {
   color: $color-primary;
 }
-  @media only screen and (min-width: $small) and (max-width: $medium) {}
-  @media only screen and (min-width: $medium) {}
+  @media only screen and (min-width: $small) and(max-width: $medium) {
+   
+  }
+  @media only screen and (min-width: $medium) {
+    #logo {
+      height: 100%;
+      transition: height 0.4s;
+    }
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      padding-top: 22px;
+    }
+    
+    ul li a {
+      text-decoration: none;
+      padding: 40px;
+      color: black;
+      font-size: 25px;
+      transition: color 0.4s;
+    }
+    .navbar-toggle {
+      display: none;
+   }
+
+  }
