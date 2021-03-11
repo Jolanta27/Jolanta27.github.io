@@ -1,65 +1,63 @@
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: black;
-  font-size: 24px; }
-
-#logo {
-  margin-top: 10px;
-  margin-left: 5px; }
-
-ul {
-  list-style-type: none;
-  display: none; }
-
-nav li {
-  text-align: center;
-  margin: 15px auto; }
-
-.main-header {
+header {
   width: 100%;
   top: 0;
   background: #eee; }
-
-ul li a {
-  font-family: "Roboto", sans-serif; }
+  header span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 26px; }
+  header img {
+    margin-top: 5px;
+    margin-left: 5px; }
+  header nav ul {
+    list-style-type: none;
+    display: none; }
+    header nav ul li {
+      text-align: center;
+      margin: 15px auto; }
+      header nav ul li a {
+        font-family: "Roboto", sans-serif;
+        color: #1f8dc0; }
+        header nav ul li a:hover {
+          color: black; }
 
 .active {
-  display: block; }
+  display: block;
+  padding-bottom: 2px; }
 
-.link_color {
-  color: #1f8dc0; }
-
-.link_color:hover {
+.GH_hover {
   color: black; }
-
-.GH_hover:hover {
-  color: #1f8dc0; }
+  .GH_hover:hover {
+    color: #1f8dc0; }
 
 @media only screen and (min-width: 600px) {
-  #logo {
-    height: 100%;
-    transition: height 0.4s; }
-  .main-header {
+  header {
     display: flex;
     justify-content: space-between;
     position: fixed; }
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    padding-top: 22px; }
-  ul li a {
-    text-decoration: none;
-    padding: 40px;
-    color: black;
-    font-size: 25px;
-    transition: color 0.4s; }
-  .navbar-toggle {
-    display: none; } }
+    header span {
+      display: none; }
+    header img {
+      height: 100%;
+      transition: height 0.4s;
+      margin: 0; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      padding-top: 15px; }
+      header nav ul li a {
+        text-decoration: none;
+        padding: 40px;
+        color: #1f8dc0;
+        font-size: 25px;
+        transition: color 0.4s; }
+        header nav ul li a:hover {
+          color: black; } }
 
 section:nth-of-type(1) {
   margin-top: 60px; }

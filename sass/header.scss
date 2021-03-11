@@ -1,74 +1,83 @@
 @import 'variables';
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer; 
-  color: black;
-  font-size: 24px;
-}
-
-#logo {
-  margin-top: 10px;
-  margin-left: 5px;
-}
-ul {
-  list-style-type: none;
-  display: none;
-}
- nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-.main-header {
+// Mobile first
+header {
   width: 100%;
   top: 0;
   background: #eee;
-}
-ul li a {
-  font-family: $font-family;
+  span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: black;
+    font-size: 26px;
+  }
+  img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  nav {
+    ul {
+    list-style-type: none;
+    display: none;
+    li {
+      text-align: center;
+      margin: 15px auto;
+      a {
+        font-family: $font-family;
+        color: $color-primary;
+        &:hover {
+          color: black;
+        }
+      } 
+     }
+   }
+  }
 }
 .active {
   display: block;
+  padding-bottom: 2px;
+}
+.GH_hover {
+  color: black;
+ &:hover {
+  color: $color-primary;
+  }
 }
 
-.link_color {
-  color: $color-primary;
-}
-.link_color:hover {
-  color: black;
-}
-.GH_hover:hover {
-  color: $color-primary;
-}
   @media only screen and (min-width: $medium) {
-    #logo {
-      height: 100%;
-      transition: height 0.4s;
-    }
-    .main-header {
+    header {
       display: flex;
       justify-content: space-between;
       position: fixed;
+      span {
+        display: none;
+      }
+      img {
+        height: 100%;
+        transition: height 0.4s;
+        margin: 0;
+      }
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style-type: none;
+          padding-top: 15px;
+        li {
+          a {
+          text-decoration: none;
+          padding: 40px;
+          color: $color-primary;
+          font-size: 25px;
+          transition: color 0.4s;
+          &:hover {
+            color: black;
+            }
+          }
+        }
+      }
     }
-    ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      padding-top: 22px;
-    }
-    
-    ul li a {
-      text-decoration: none;
-      padding: 40px;
-      color: black;
-      font-size: 25px;
-      transition: color 0.4s;
-    }
-    .navbar-toggle {
-      display: none;
-   }
-
   }
+}
