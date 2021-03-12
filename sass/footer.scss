@@ -1,41 +1,28 @@
 @import 'variables';
 
-#main-footer{
+footer{
   background-color: rgb(221, 243, 252);
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 5rem;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  height: 5rem;
-  align-items: center;
-}
-.container {
-  max-width: 1280px;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
-}
-a {
-text-decoration: none;
- color: black;
- font-size: 3vh;
- padding: 14px 20px;
-}
-.copyright {
-  font-family: $font-family;
-}
-  @media only screen and (min-width: $small) and (max-width: $medium) {
-    .social {
-      display: none;
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 1.5vh;
+      font-family: $font-family;
+      padding-left: 10px;
     }
-    .copyright {
-      font-size: 2vh;
-      text-align: center;
+    div {
+      padding-right: 80px;
+      a {
+        text-decoration: none;
+         color: black;
+         font-size: 2vh;
+         padding: 14px 20px;
+        }
     }
   }
-  @media only screen and (min-width: $medium) {}
+}
