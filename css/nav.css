@@ -1,0 +1,50 @@
+span#js-navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 26px; }
+
+nav ul {
+  list-style-type: none;
+  display: none; }
+
+nav li {
+  text-align: center;
+  margin: 15px auto; }
+
+nav a {
+  text-decoration: none;
+  color: #1f8dc0;
+  font-size: 20px; }
+  nav a:hover {
+    color: black; }
+
+nav .active {
+  display: block;
+  padding-bottom: 10px; }
+
+nav .GH_hover {
+  color: black; }
+  nav .GH_hover:hover {
+    color: #1f8dc0; }
+
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header span {
+      display: none; }
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 15px; }
+    header nav a {
+      text-decoration: none;
+      padding: 40px;
+      color: #1f8dc0;
+      font-size: 25px; }
+      header nav a:hover {
+        color: black; } }

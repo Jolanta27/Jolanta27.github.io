@@ -1,15 +1,12 @@
 footer {
   background-color: #ddf3fc;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+  width: 100%; }
   footer div {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     footer div p {
       font-size: 1.5vh;
-      font-family: "Roboto", sans-serif;
       padding-left: 10px; }
     footer div div {
       padding-right: 80px; }

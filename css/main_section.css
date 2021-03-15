@@ -1,6 +1,7 @@
 section:nth-of-type(1) {
   margin-top: 120px;
-  height: 100vh; }
+  height: 100vh;
+}
 
 #myBtn {
   display: none;
@@ -15,9 +16,12 @@ section:nth-of-type(1) {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
-  font-size: 18px; }
-  #myBtn:hover {
-    background-color: #83d8ff; }
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #83d8ff;
+}
 
 section h1 {
   font-family: "Roboto", sans-serif;
@@ -25,60 +29,98 @@ section h1 {
   letter-spacing: 0.02em;
   line-height: 100%;
   margin: 10px;
-  text-align: center; }
-  section h1 span {
-    display: block; }
-  section h1 .my_button {
-    font-size: 10px;
-    width: 30%;
-    margin: 10px auto;
-    background-color: #1f8dc0;
-    color: white;
-    border-radius: 8px;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block; }
-    section h1 .my_button:hover {
-      -ms-transform: scale(1.05) translateZ(0);
-      transform: scale(1.05) translateZ(0); }
-  section h1 .profession {
-    color: #1f8dc0; }
+  text-align: center;
+}
+
+section h1 span {
+  display: block;
+}
+
+section h1 .my_button {
+  font-size: 10px;
+  width: 30%;
+  margin: 10px auto;
+  background-color: #1f8dc0;
+  color: white;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+section h1 .my_button:hover {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+section h1 .profession {
+  color: #1f8dc0;
+}
 
 section .my_pic {
   border-radius: 30%;
   width: 35%;
   margin: 70px auto;
-  display: block; }
-  section .my_pic:hover {
-    -ms-transform: scale(1.05) translateZ(0);
-    transform: scale(1.05) translateZ(0); }
+  display: block;
+}
+
+section .my_pic:hover {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
 
 @media only screen and (min-width: 600px) {
   section:nth-of-type(1) {
     margin-top: 220px;
-    height: 80vh; }
+    height: 80vh;
+  }
   section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 10px 150px; }
-    section div h1 {
-      background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
-      background-repeat: no-repeat;
-      font-size: 3em;
-      letter-spacing: 0.03em;
-      flex-direction: column;
-      align-items: center;
-      line-height: 120%;
-      display: flex;
-      justify-content: center; }
-      section div h1 a {
-        margin: 10px;
-        padding: 6px;
-        font-size: 25px;
-        width: 50%;
-        display: flex;
-        justify-content: center; }
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 150px;
+  }
+  section div h1 {
+    background-image: url(https://pluspng.com/img-png/quotation-png-file-quote-background-transparent-png-512.png);
+    background-repeat: no-repeat;
+    font-size: 3em;
+    letter-spacing: 0.03em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section div h1 a {
+    margin: 10px;
+    padding: 6px;
+    font-size: 25px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   section .my_pic {
     width: 35%;
-    margin: auto 10px; } }
+    margin: auto 10px;
+  }
+}
+/*# sourceMappingURL=main_section.css.map */
