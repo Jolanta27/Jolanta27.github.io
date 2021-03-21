@@ -119,6 +119,50 @@ img#my_pic {
       section:nth-of-type(1) div#about_ img#my_pic {
         width: 50%; } }
 
+section:nth-of-type(2) {
+  margin: -50px 10px 20px 10px; }
+
+h2 {
+  text-align: center;
+  font-size: 30px; }
+
+span.line {
+  background-color: blue;
+  width: 4rem;
+  height: 3px;
+  display: block;
+  margin: 1rem auto; }
+
+div.description {
+  text-align: center; }
+  div.description p {
+    margin-bottom: 10px; }
+
+img.little_pic {
+  display: block;
+  margin: 20px auto; }
+
+section:nth-of-type(3) {
+  margin: 20px 10px; }
+
+div.my_rules {
+  text-align: center;
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 20px; }
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 35px; }
+  div#aboutMe {
+    height: 100vh; }
+  img.little_pic {
+    display: inline;
+    text-align: center; }
+  div.last_section {
+    display: flex; } }
+
 footer {
   background-color: #ddf3fc;
   width: 100%; }
