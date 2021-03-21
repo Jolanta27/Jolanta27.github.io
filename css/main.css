@@ -34,15 +34,22 @@ div.my_rules {
 h3 {
   font-size: 20px; }
 
-div.progress p {
-  border-radius: 15px;
-  background-color: #1f8dc0;
-  color: white;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  width: 120px;
-  height: 100px; }
+div.progress_ {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  grid-gap: 30px; }
+  div.progress_ p {
+    border-radius: 15px;
+    background-color: #1f8dc0;
+    color: white;
+    text-align: center;
+    width: 120px;
+    line-height: 100px;
+    height: 100px; }
+    div.progress_ p:hover {
+      -ms-transform: scale(1.05) translateZ(0);
+      transform: scale(1.05) translateZ(0); }
 
 div.last_section {
   text-align: center;
@@ -65,9 +72,11 @@ div.last_section {
     justify-content: center; }
   div.pictures {
     display: flex; }
-  div.progress p:hover {
-    -ms-transform: scale(1.05) translateZ(0);
-    transform: scale(1.05) translateZ(0); }
+  div.progress {
+    height: 30%; }
+  div.progress_ {
+    display: flex;
+    justify-content: space-around; }
   div.last_section {
     display: flex;
     justify-content: space-around;

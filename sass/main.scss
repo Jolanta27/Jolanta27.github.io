@@ -38,18 +38,26 @@ div.my_rules {
 h3 {
     font-size: 20px;
 }
-div.progress {
+div.progress_ {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    
    p {
         border-radius: 15px;
-       background-color:$color-primary;
-       color: white;
+        background-color:$color-primary;
+        color: white;
         text-align: center;
-        display: table-cell;
-        vertical-align: middle;
         width: 120px;
+        line-height: 100px;
         height: 100px;
-   }
-}
+        &:hover {
+            -ms-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+            }
+        }
+    }
 div.last_section {
     text-align: center;
     margin: 10px;
@@ -80,11 +88,13 @@ div.last_section {
         display: flex;
     }
     div.progress{
-        p:hover {
-        -ms-transform: scale(1.05) translateZ(0);
-        transform: scale(1.05) translateZ(0);
-        }
+        height: 30%;
     }
+    div.progress_ {
+        display: flex;
+        justify-content: space-around;
+    }
+   
     div.last_section {
         display: flex;
        justify-content: space-around;
