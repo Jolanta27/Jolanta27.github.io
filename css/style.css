@@ -127,7 +127,7 @@ h2 {
   font-size: 30px; }
 
 span.line {
-  background-color: blue;
+  background-color: #1f8dc0;
   width: 4rem;
   height: 3px;
   display: block;
@@ -141,6 +141,9 @@ div.description {
 img.little_pic {
   display: block;
   margin: 20px auto; }
+  img.little_pic:hover {
+    -ms-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0); }
 
 section:nth-of-type(3) {
   margin: 20px 10px; }
@@ -152,16 +155,46 @@ div.my_rules {
 h3 {
   font-size: 20px; }
 
+div.progress p {
+  border-radius: 15px;
+  background-color: #1f8dc0;
+  color: white;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 120px;
+  height: 100px; }
+
+div.last_section {
+  text-align: center;
+  margin: 10px;
+  padding: 10px 0; }
+  div.last_section img.mentor {
+    margin-top: 20px; }
+
 @media only screen and (min-width: 600px) {
   h2 {
     font-size: 35px; }
+  h3 {
+    font-size: 25px; }
+  p {
+    font-size: 20px; }
   div#aboutMe {
-    height: 100vh; }
-  img.little_pic {
-    display: inline;
-    text-align: center; }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  div.pictures {
+    display: flex; }
+  div.progress p:hover {
+    -ms-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0); }
   div.last_section {
-    display: flex; } }
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    div.last_section p {
+      font-size: 20px; } }
 
 footer {
   background-color: #ddf3fc;
@@ -176,7 +209,6 @@ footer {
     footer div div {
       padding-right: 80px; }
       footer div div a {
-        text-decoration: none;
         color: black;
         font-size: 2vh;
         padding: 14px 20px; }

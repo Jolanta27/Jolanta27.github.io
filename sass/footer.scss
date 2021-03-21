@@ -1,10 +1,9 @@
 @import 'variables';
 
-footer{
+footer {
   background-color: rgb(221, 243, 252);
   width: 100%;
 
-  
   div {
     display: flex;
     justify-content: space-between;
@@ -16,7 +15,6 @@ footer{
     div {
       padding-right: 80px;
       a {
-        text-decoration: none;
          color: black;
          font-size: 2vh;
          padding: 14px 20px;
