@@ -131,7 +131,7 @@ span.line {
   width: 4rem;
   height: 3px;
   display: block;
-  margin: 1rem auto; }
+  margin: 1rem auto 2rem auto; }
 
 div.description {
   text-align: center; }
@@ -151,9 +151,9 @@ section:nth-of-type(3) {
 div.my_rules {
   text-align: center;
   margin-bottom: 20px; }
-
-h3 {
-  font-size: 20px; }
+  div.my_rules h3 {
+    font-size: 20px;
+    margin-bottom: 10px; }
 
 div.progress_ {
   display: grid;
@@ -191,19 +191,20 @@ div.last_section {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  div.pictures {
-    display: flex; }
+    div#aboutMe div.pictures {
+      display: flex; }
   div.progress {
     height: 30%; }
-  div.progress_ {
-    display: flex;
-    justify-content: space-around; }
+    div.progress div.progress_ {
+      display: flex;
+      justify-content: space-around; }
   div.last_section {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
-    div.last_section p {
-      font-size: 20px; } }
+    align-items: center; } }
+
+i.success {
+  font-size: 30px; }
 
 footer {
   background-color: #ddf3fc;

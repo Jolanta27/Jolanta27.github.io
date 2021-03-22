@@ -1,5 +1,8 @@
 @import 'variables';
-
+@mixin animation {
+    -ms-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0);
+  }
 section:nth-of-type(2) {
 margin: -50px 10px 20px 10px;
 }
@@ -12,7 +15,7 @@ span.line {
     width: 4rem;
     height: 3px;
     display: block;
-    margin: 1rem auto;
+    margin: 1rem auto 2rem auto;
 }
 div.description {
     text-align: center;
@@ -24,26 +27,27 @@ img.little_pic {
     display: block;
     margin: 20px auto;
     &:hover {  
-        -ms-transform: scale(1.05) translateZ(0);
-        transform: scale(1.05) translateZ(0);
+       @include animation;
+        }
     }
-}
+
 section:nth-of-type(3) {
     margin: 20px 10px;
 }
 div.my_rules {
     text-align: center;
     margin-bottom: 20px;
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
-h3 {
-    font-size: 20px;
-}
+
 div.progress_ {
     display: grid;
     justify-content: space-around;
     grid-template-columns: auto auto;
-    grid-gap: 30px;
-    
+    grid-gap: 30px; 
    p {
         border-radius: 15px;
         background-color:$color-primary;
@@ -53,11 +57,10 @@ div.progress_ {
         line-height: 100px;
         height: 100px;
         &:hover {
-            -ms-transform: scale(1.05) translateZ(0);
-            transform: scale(1.05) translateZ(0);
-            }
+            @include animation;
         }
     }
+}
 div.last_section {
     text-align: center;
     margin: 10px;
@@ -73,7 +76,6 @@ div.last_section {
     }
     h3 {
         font-size: 25px;
-      
     }
     p {
         font-size: 20px;
@@ -83,24 +85,24 @@ div.last_section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-    div.pictures {
-        display: flex;
-    }
-    div.progress{
-        height: 30%;
-    }
-    div.progress_ {
-        display: flex;
-        justify-content: space-around;
+        div.pictures {
+            display: flex;
+        }
     }
    
+    div.progress{
+        height: 30%;
+        div.progress_ {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
     div.last_section {
         display: flex;
        justify-content: space-around;
        align-items: center;
-       p {
-           font-size: 20px;
-       }
     }
+}
+i.success {
+    font-size: 30px;
 }
