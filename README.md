@@ -24,6 +24,5 @@ Portfolio - page about me... :collision:
   
 <h4>:mag_right: :mag_right: see what it looks like:</h4>
 
-![Screenshot](https://user-images.githubusercontent.com/53143114/116790419-53b2e400-aab4-11eb-9616-9d1b1f3335cf.jpeg)
+![](me1.gif)
 
-![Screenshot](https://user-images.githubusercontent.com/53143114/116790434-65948700-aab4-11eb-9094-c3010b691d18.jpeg)
