@@ -16,8 +16,10 @@ Portfolio - page about me... :collision:
 <p>An item should appear with the "Download ZIP" option - click again.</p>
 <p>Now you just need to unpack the downloaded file and open it in your favorite editor.</p>
 
-<p>Or you can watch it live: 
-:arrow_right: :arrow_right:[click me](https://jolanta27.github.io) :arrow_left: :arrow_left:
+<p>Or you can watch it live:</p>
+<p>:arrow_right: :arrow_right:
+ [CLICK ME](https://jolanta27.github.io) 
+ :arrow_left: :arrow_left:</p>
   
   
 <h4>:mag_right: :mag_right: see what it looks like:</h4>
